@@ -17,9 +17,9 @@ function fetchAndDisplayGif(event) {
     event.preventDefault();
     var validornot = $("#valid").val().toLowerCase();
 
-    if (validornot == 5|| validornot ==  "five") {
-      $("#notvaild").hide();
-
+    if (validornot == 5 || validornot == "five") {
+        $("#notvaild").hide();
+        $("#valid").removeClass("error");
         // get the user's input text from the DOM
         // TODO should be e.g. "dance"
         var searchQuery = $("#userinput").val();
@@ -60,12 +60,11 @@ function fetchAndDisplayGif(event) {
         setGifLoadedStatus(false);
         // TODO
         // give the user a "Loading..." message while they wait
-    }
-
-    else {
+    } else {
         // $("#loading").hide();
         $("#gif").hide();
         $("#notvaild").text("No gifs for you BWAHAHA!").show();
+        $("#valid").addClass("error");
         setGifLoadedStatus(true);
 
     };

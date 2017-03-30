@@ -5,6 +5,7 @@
     <title>The AJAXson 5</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="request-gif.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -12,21 +13,23 @@
     <h1>The AJAXson 5</h1>
 
     <form id="form-gif-request" />
+    <div class="boxinputvalid">
     <label>What kind of Jackson 5 related gif do you want?</label>
-    <input id="userinput" name="tag" type="text" />
-
-
-
-
+  <br>
+    <input id="userinput" name="tag" type="text" placeholder="e.g. 'dance'" />
+</div>
     <br>
+    <div class="boxinputvalid">
     <label>Prove you're not a robot by answering this riddle:</label>
     <br>
-    <input id="valid" type="text"> Jacksons are better than one.
-    <input type="submit" value="Get my Gif!" />
-      <p id="loading" hidden="true"></p>
+    <div class= "inputvalid">
+    <input id="valid" type="text"> Jacksons are better than one.</div></div>
+    <br>
+    <input class="button" type="submit" value="Get my Gif!" />
+    <p id="loading" hidden="true"></p>
     <br>
     <img id="gif" src="" hidden="true" />
-    <p class="error" id="notvaild" hidden="true"></p>
+    <p id="notvaild" hidden="true"></p>
     </form>
     <br>
 
